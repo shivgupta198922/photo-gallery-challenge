@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #47345c;
+}
+
+button {
+	display: block;
+	position: fixed;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	width: 145px;
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	border: none;
+	border-radius: 6px;
+	padding: 12px 0px;
+	z-index: 100;
+}
+
+.reset {
+	background-color: #dbd0f5;
+}
+
+.preset {
+	background-color: #cfa6ff;
+}
+
+#reset-stack {
+	bottom: 20px;
+	right: 20px;
+}
+
+#reset-filter {
+	bottom: 70px;
+	right: 20px;
+} 
+
+/* PRESET ONE */
+#invert-btn {
+	bottom: 270px;
+	right: 20px;
+}
+
+/* PRESET TWO */
+#bright-btn {
+	bottom: 220px;
+	right: 20px;
+}
+
+/* PRESET THREE */
+#contrast-btn {
+	bottom: 170px;
+	right: 20px;
+}
+
+/* PRESET FOUR */
+#blur-btn {
+	bottom: 120px;
+	right: 20px;
+}
+
+button:active {
+	background-color: white;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	color: #967dd1;
+}
+
+
+.gallery {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.photo-container {
+	display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+	transform: translate(-50%, -50%);
+  user-select: none;
+	font-family: 'Over the Rainbow', cursive;
+	background-color: white;
+	margin: 0px;
+	padding: 6px 6px 18px;
+	width: 200px;
+	height: 236px;
+  border-radius: 2px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	z-index: 1;
+  cursor: pointer;
+}
+
+.photo {
+  text-align: center;
+	width: 100%;
+  height: 200px;
+	margin: 0px;
+	border-radius: 6px;
+	transition: all ease-in-out 1s;
+}
+
+.photo img {
+  width: 100%;
+	height: 100%;
+  border-radius: 2px;
+  margin-bottom: 0px;
+	padding-bottom: 0px;
+	pointer-events: none;
+}
+
+
+.small {
+  max-width: 200px;
+}
+
+.photo figcaption {
+  font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	margin-top: 0px;
+}
+
+/* SMALLER DEVICES */
+@media only screen and (max-width: 550px) {
+button {
+	width: 90px;
+	Padding: 6px 0;
+	margin: 0px;
+	font-size: 10px;
+}
+
+#reset-stack {
+	bottom: 30px;
+	right: 15px;
+}
+
+#reset-filter {
+	bottom: 60px;
+	right: 15px;
+} 
+
+/* PRESET ONE */
+#invert-btn {
+	bottom: 180px;
+	right: 15px;
+}
+
+/* PRESET TWO */
+#bright-btn {
+	bottom: 150px;
+	right: 15px;
+}
+
+/* PRESET THREE */
+#contrast-btn {
+	bottom: 120px;
+	right: 15px;
+}
+	
+/* PRESET FOUR */
+#blur-btn {
+	bottom: 90px;
+	right: 15px;
+}
+
+.photo-container {
+	padding: 6px 6px 18px;
+	width: 150px;
+	height: 177px;
+}
+
+.photo {
+  height: 150px;
+}
+
+.small {
+  max-width: 150px;
+}
+
+.photo figcaption {
+  font-size: 12px;
+}
+}
